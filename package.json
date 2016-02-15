@@ -1,12 +1,12 @@
 {
-  "name": "npm static boilerplate",
+  "name": "npm_static_boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "lint": "jshint assets/scripts/*.js",
     "build:js": "uglifyjs assets/scripts/main.js -o dist/public/js/main.min.js",
-    "build:css": "postcss -u autoprefixer -u precss -u cssnano assets/css/main.css -o  dist/public/css/main.min.css",
+    "build:css": "postcss -u autoprefixer -u precss -u lost -u cssnano assets/css/main.css -o  dist/public/css/main.min.css",
     "build": "echo '=> building' && npm run build:js -s && npm run build:css -s",
     "server": "http-server dist/public/"
   },
@@ -18,8 +18,10 @@
     "cssnano": "^3.5.2",
     "http-server": "^0.8.5",
     "jshint": "^2.9.1",
+    "lost": "^6.7.1",
     "parallelshell": "^2.0.0",
     "postcss": "^5.0.16",
+    "postcss-cli": "^2.5.1",
     "precss": "^1.4.0",
     "uglify-js": "^2.6.1",
     "watch": "^0.17.1"
