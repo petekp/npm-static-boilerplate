@@ -1,0 +1,27 @@
+{
+  "name": "npm static boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint assets/scripts/*.js",
+    "build:js": "uglifyjs assets/scripts/main.js -o dist/public/js/main.min.js",
+    "build:css": "postcss -u autoprefixer -u precss -u cssnano assets/css/main.css -o  dist/public/css/main.min.css",
+    "build": "echo '=> building' && npm run build:js -s && npm run build:css -s",
+    "server": "http-server dist/public/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "clean-css": "^3.4.9",
+    "cssnano": "^3.5.2",
+    "http-server": "^0.8.5",
+    "jshint": "^2.9.1",
+    "parallelshell": "^2.0.0",
+    "postcss": "^5.0.16",
+    "precss": "^1.4.0",
+    "uglify-js": "^2.6.1",
+    "watch": "^0.17.1"
+  }
+}

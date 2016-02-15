@@ -1,0 +1,11 @@
+body{
+
+  transition: 1s all linear;
+
+  h1{
+    user-select: none;
+  }
+  h2{
+    color: red;
+  }
+}
