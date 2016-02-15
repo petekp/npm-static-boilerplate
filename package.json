@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "jshint assets/scripts/*.js",
     "build:js": "uglifyjs assets/scripts/main.js -o dist/public/js/main.min.js",
-    "build:css": "postcss -u autoprefixer -u precss -u lost -u cssnano assets/css/main.css -o  dist/public/css/main.min.css",
+    "build:css": "postcss -u autoprefixer -u lost -u precss -u cssnano assets/css/main.css -o  dist/public/css/main.min.css",
     "build": "echo '=> building' && npm run build:js -s && npm run build:css -s",
     "server": "http-server dist/public/"
   },

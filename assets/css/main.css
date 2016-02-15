@@ -1,11 +1,17 @@
-body{
+@lost flexbox flex;
 
+body{
+  lost-center: 980px;
   transition: 1s all linear;
+
 
   h1{
     user-select: none;
+
   }
   h2{
     color: red;
+    background: pink;
+    lost-column: 1/3;
   }
 }
