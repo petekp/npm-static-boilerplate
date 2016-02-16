@@ -1,13 +1,20 @@
+// layout
 $spacer: 20px;
 
+// colors
+$color-oxygen: #00a2a7;
+$color-hydrogen: #0fdac2;
+$color-carbon: #2f3e49;
+$color-nitrogen: #bcf469;
+$color-phosphorous: #f4fd98;
+$color-iron: #ff5a5a;
+
+
 html{
-  height: auto;
-  margin: 0;
+
 }
 body{
-  lost-utility: edit;
-  margin: 0;
-  width: 100%;
+
 }
 header{
   margin: 0 0 $spacer 0;
@@ -25,4 +32,8 @@ section{
 .container{
   background: #fff;
   lost-center: 980px;
+}
+
+.center{
+  text-align: center;
 }

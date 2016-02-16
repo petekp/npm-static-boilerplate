@@ -1,3 +1,6 @@
 header.home{
-  background-color: green;
+  background: linear-gradient(135deg, #00a2a7 0%,#0fdac2 100%);
+  height: 60vh;
+  lost-align: center;
+  color: #fff;
 }
