@@ -10,7 +10,7 @@
     "prebuild:js": "npm run lint",
     "build:js": "uglifyjs -o dist/public/js/main.min.js assets/js/main.js",
     "build:html": "jade assets/jade/index.jade -o dist/public",
-    "build:css": "postcss -u precss -u postcss-import -u lost -u autoprefixer -u cssnano assets/css/main.css -o  dist/public/css/main.min.css",
+    "build:css": "postcss -u precss -u postcss-import -u rucksack-css -u lost -u autoprefixer -u cssnano assets/css/main.css -o  dist/public/css/main.min.css",
     "watch:css": "onchange 'assets/css/*' -- npm run build:css",
     "watch:js": "onchange 'assets/js/*' -- npm run build:js",
     "watch:html": "onchange 'assets/jade/*' -- npm run build:html",
@@ -38,6 +38,7 @@
     "postcss-import": "^8.0.2",
     "precss": "^1.4.0",
     "rimraf": "^2.5.2",
+    "rucksack-css": "^0.8.5",
     "uglify-js": "^2.6.1",
     "watch": "^0.17.1"
   }

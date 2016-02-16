@@ -1,5 +1,5 @@
 (function(){
 
-  var poop = "poooo oooooop";
+  var test = "test";
 
 })();
