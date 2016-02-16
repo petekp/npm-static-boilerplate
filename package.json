@@ -15,7 +15,7 @@
     "watch:js": "onchange 'assets/js/*' -- npm run build:js",
     "watch:html": "onchange 'assets/jade/*' -- npm run build:html",
     "build": "npm-run-all --parallel --silent build:*",
-    "server": "live-server --port=8080 dist/public/",
+    "server": "live-server --port=8080 --host=localhost dist/public/",
     "start": "npm-run-all --parallel server build watch:*"
   },
   "author": "",
