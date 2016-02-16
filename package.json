@@ -11,7 +11,7 @@
     "build:js": "uglifyjs -o dist/public/js/main.min.js assets/js/main.js",
     "build:html": "jade assets/jade/index.jade -o dist/public",
     "build:css": "postcss -u postcss-import -u lost -u precss -u autoprefixer -u cssnano assets/css/main.css -o  dist/public/css/main.min.css",
-    "build": "npm-run-all -s --silent build:js build:css build:html",
+    "build": "npm-run-all -s --silent build:*",
     "start": "http-server dist/public/"
   },
   "author": "",
