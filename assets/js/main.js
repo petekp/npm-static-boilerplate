@@ -1,6 +1,5 @@
 (function(){
-  "use strict";
 
-  var poop = poooop;
+  var poop = "poooop";
 
 })();
