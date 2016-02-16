@@ -2,6 +2,7 @@
 @lost flexbox flex;
 
 body{
+  background: red;
   lost-center: 980px;
   transition: 1s all linear;
 
@@ -9,7 +10,7 @@ body{
     user-select: none;
   }
   h2{
-    color: green;
+    color: red;
     background: pink;
     lost-column: 1/3;
   }
