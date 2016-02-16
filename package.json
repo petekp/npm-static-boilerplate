@@ -10,7 +10,7 @@
     "prebuild:js": "npm run lint",
     "build:js": "uglifyjs -o dist/public/js/main.min.js assets/js/main.js",
     "build:html": "jade assets/jade/index.jade -o dist/public",
-    "build:css": "postcss -u lost -u precss -u autoprefixer -u cssnano assets/css/main.css -o  dist/public/css/main.min.css",
+    "build:css": "postcss -u postcss-import -u lost -u precss -u autoprefixer -u cssnano assets/css/main.css -o  dist/public/css/main.min.css",
     "build": "npm run build:js -s && npm run build:css -s && npm run build:html -s",
     "start": "http-server dist/public/"
   },
@@ -28,6 +28,7 @@
     "parallelshell": "^2.0.0",
     "postcss": "^5.0.16",
     "postcss-cli": "^2.5.1",
+    "postcss-import": "^8.0.2",
     "precss": "^1.4.0",
     "rimraf": "^2.5.2",
     "uglify-js": "^2.6.1",
