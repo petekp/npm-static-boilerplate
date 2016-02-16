@@ -8,7 +8,7 @@ body{
     user-select: none;
   }
   h2{
-    color: red;
+    color: green;
     background: pink;
     lost-column: 1/3;
   }
