@@ -11,7 +11,7 @@
     "build:js": "uglifyjs -o dist/public/js/main.min.js assets/js/main.js",
     "build:html": "jade assets/jade/index.jade -o dist/public",
     "build:css": "postcss -u postcss-import -u lost -u precss -u autoprefixer -u cssnano assets/css/main.css -o  dist/public/css/main.min.css",
-    "build": "npm run build:js -s && npm run build:css -s && npm run build:html -s",
+    "build": "npm-run-all -s --silent build:js build:css build:html",
     "start": "http-server dist/public/"
   },
   "author": "",
@@ -25,6 +25,7 @@
     "jshint": "^2.9.1",
     "lost": "^6.7.1",
     "mkdirp": "^0.5.1",
+    "npm-run-all": "^1.5.1",
     "parallelshell": "^2.0.0",
     "postcss": "^5.0.16",
     "postcss-cli": "^2.5.1",
