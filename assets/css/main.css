@@ -2,13 +2,13 @@
 @lost flexbox flex;
 
 body{
-  background: blue;
+  background: green;
   lost-center: 980px;
   transition: 1s all linear;
 
   div{
     lost-column: 1/12;
-    background: pink;
+    background: grey;
   }
 
   h1{
