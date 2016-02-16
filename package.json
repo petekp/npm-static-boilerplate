@@ -14,9 +14,9 @@
     "watch:css": "onchange 'assets/css/*' -- npm run build:css",
     "watch:js": "onchange 'assets/js/*' -- npm run build:js",
     "watch:html": "onchange 'assets/jade/*' -- npm run build:html",
-    "build": "npm-run-all -s --silent build:*",
+    "build": "npm-run-all --parallel --silent build:*",
     "server": "http-server dist/public/",
-    "start": "npm-run-all --parallel server watch:*"
+    "start": "npm-run-all --parallel server build watch:*"
   },
   "author": "",
   "license": "ISC",
