@@ -1,22 +1,5 @@
-@import 'normalize.css';
+@import 'vendor/normalize.css';
+@import "vendor/bourbon";
+@import 'common.css';
+@import 'home.css';
 @lost flexbox flex;
-
-body{
-  background: green;
-  lost-center: 980px;
-  transition: 1s all linear;
-
-  div{
-    lost-column: 1/12;
-    background: grey;
-  }
-
-  h1{
-    user-select: none;
-  }
-  h2{
-    color: red;
-    background: pink;
-    lost-column: 1/3;
-  }
-}

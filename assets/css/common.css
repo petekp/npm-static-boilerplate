@@ -1,0 +1,28 @@
+$spacer: 20px;
+
+html{
+  height: auto;
+  margin: 0;
+}
+body{
+  lost-utility: edit;
+  margin: 0;
+  width: 100%;
+}
+header{
+  margin: 0 0 $spacer 0;
+  text-align: center;
+}
+section{
+  lost-flex-container: row;
+  lost-center: 1140px;
+  margin-bottom: $spacer;
+
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+.container{
+  background: #fff;
+  lost-center: 980px;
+}
